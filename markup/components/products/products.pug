@@ -1,18 +1,18 @@
-mixin products(data)
+mixin products-en(data)
     section.products
         .products__container.container
-            h2.products__title.title.title_reg <span>Мессенджеры</span> – самый эффективный канал коммуникаций с клиентами
+            h2.products__title.title.title_reg <span>Messengers</span> – the most effective channel for communication with customers
 
             ul.products__list
 
                 li.products__item.products__item_active(data-rating='5')
                     .products__heading(data-title="Канал комуникации")
                         != pugHelpers.Icon.call(locals, {iconName: 'products-1-icon', className: 'products__item-icon'})
-                        .products__item-title Мессенджеры
+                        .products__item-title Messengers
 
                     dl.products__specs
                         .products__specs-item.products__specs-item_3
-                            dt.products__specs-term Эффективность
+                            dt.products__specs-term Efficiency
                             .products__specs-rating
                                 span.products__specs-line
                                 span.products__specs-line
@@ -24,11 +24,11 @@ mixin products(data)
                                 .products__rating-val <span>5</span> / 5
 
                         .products__specs-item.products__specs-item_1
-                            dt.products__specs-term Увидят (Open Rate)
+                            dt.products__specs-term Open Rate
                             dd.products__specs-desc 90%
 
                         .products__specs-item.products__specs-item_2
-                            dt.products__specs-term Кликнут (Click Rate)
+                            dt.products__specs-term Click Rate
                             dd.products__specs-desc 50%
 
                 li.products__item(data-rating='4')
@@ -39,7 +39,7 @@ mixin products(data)
 
                     dl.products__specs
                         .products__specs-item.products__specs-item_rating.products__specs-item_3
-                            dt.products__specs-term Эффективность
+                            dt.products__specs-term Efficiency
 
                             .products__specs-rating
                                 span.products__specs-line
@@ -53,22 +53,22 @@ mixin products(data)
                                 .products__rating-val <span>4</span> / 5
 
                         .products__specs-item.products__specs-item_1
-                            dt.products__specs-term Увидят (Open Rate)
+                            dt.products__specs-term Open Rate
                             dd.products__specs-desc 50%
 
                         .products__specs-item.products__specs-item_2
-                            dt.products__specs-term Кликнут (Click Rate)
+                            dt.products__specs-term Click Rate
                             dd.products__specs-desc 10%
 
                 li.products__item(data-rating='3')
                     .products__heading(data-title="Канал комуникации")
 
                         != pugHelpers.Icon.call(locals, {iconName: 'products-3-icon', className: 'products__item-icon'})
-                        .products__item-title SMS-сообщения
+                        .products__item-title SMS messages
 
                     dl.products__specs
                         .products__specs-item.products__specs-item_rating.products__specs-item_3
-                            dt.products__specs-term Эффективность
+                            dt.products__specs-term Efficiency
 
                             .products__specs-rating
                                 span.products__specs-line
@@ -81,21 +81,21 @@ mixin products(data)
                                 .products__rating-val <span>3</span> / 5
 
                         .products__specs-item.products__specs-item_1
-                            dt.products__specs-term Увидят (Open Rate)
+                            dt.products__specs-term Open Rate
                             dd.products__specs-desc 90%
 
                         .products__specs-item.products__specs-item_2
-                            dt.products__specs-term Кликнут (Click Rate)
+                            dt.products__specs-term Click Rate
                             dd.products__specs-desc 1%
 
                 li.products__item(data-rating='2')
                     .products__heading(data-title="Канал комуникации")
                         != pugHelpers.Icon.call(locals, {iconName: 'products-4-icon', className: 'products__item-icon'})
-                        .products__item-title Email-рассылка
+                        .products__item-title Email newsletter
 
                     dl.products__specs
                         .products__specs-item.products__specs-item_rating.products__specs-item_3
-                            dt.products__specs-term Эффективность
+                            dt.products__specs-term Efficiency
 
                             .products__specs-rating
                                 span.products__specs-line
@@ -108,22 +108,22 @@ mixin products(data)
                                 .products__rating-val <span>2</span> / 5
 
                         .products__specs-item.products__specs-item_1
-                            dt.products__specs-term Увидят (Open Rate)
+                            dt.products__specs-term Open Rate
                             dd.products__specs-desc 15%
 
                         .products__specs-item.products__specs-item_2
-                            dt.products__specs-term Кликнут (Click Rate)
+                            dt.products__specs-term Click Rate
                             dd.products__specs-desc 5%
 
                 li.products__item(data-rating='1')
                     .products__heading(data-title="Канал комуникации")
 
                         != pugHelpers.Icon.call(locals, {iconName: 'products-5-icon', className: 'products__item-icon'})
-                        .products__item-title Браузерный Push
+                        .products__item-title Browser Push
 
                     dl.products__specs
                         .products__specs-item.products__specs-item_3
-                            dt.products__specs-term Эффективность
+                            dt.products__specs-term Efficiency
 
                             .products__specs-rating
                                 span.products__specs-line
@@ -136,17 +136,17 @@ mixin products(data)
                                 .products__rating-val <span>1</span> / 5
 
                         .products__specs-item.products__specs-item_1
-                            dt.products__specs-term Увидят (Open Rate)
+                            dt.products__specs-term Open Rate
                             dd.products__specs-desc 30%
 
                         .products__specs-item.products__specs-item_2
-                            dt.products__specs-term Кликнут (Click Rate)
+                            dt.products__specs-term Click Rate
                             dd.products__specs-desc 0,5%
 
 
 
             .products__button-w
-                a.products__button.button(href="#") Обсудить проект
+                a.products__button.button(href="#request") Discuss project
 
 
         != pugHelpers.Icon.call(locals, {iconName: 'products-bg', className: 'products__bg'})

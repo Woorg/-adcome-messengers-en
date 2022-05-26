@@ -3,12 +3,8 @@ module.exports = {
         {
             "name": "flex-gap-polyfill",
             "options": {
-                "webComponents": true,
-
-
-                // "only": true,
+                "webComponents": true
             }
-
         }
     ],
     "svg": {
@@ -72,6 +68,5 @@ module.exports = {
         "staticFolderName": "static",
         "imagesFolderName": "img",
         "componentsFolderName": "components"
-    },
-    "staticPrefix": "static/"
+    }
 };

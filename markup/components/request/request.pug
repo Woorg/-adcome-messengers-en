@@ -1,12 +1,17 @@
-mixin request(data)
+
+
+mixin request-en(data)
     .request
         .request__container.container
             .request__w
                 .request__entry
-                    h2.request__title.title.title_reg Свяжитесь с нами и обсудите проект
-                    .request__text Проконсультируем по всем вопросам
+                    h2.request__title.title.title_reg Contact us and discuss the project
 
-                a.request__button.button.button_filled_white(href="#") Обсудить проект
+                    .request__text We will advise on all issues
+
+
+                a.request__button.button.button_filled_white(href="#request") Discuss the project
+
 
                 != pugHelpers.Icon.call(locals, {iconName: 'request-icon', className: 'request__icon'})
 
@@ -18,27 +23,28 @@ mixin request(data)
         != pugHelpers.Icon.call(locals, {iconName: 'request-bg', className: 'request__bg'})
 
 
-mixin request-second(data)
-    section.request.request_second&attributes(attributes)
+
+mixin request-second-en(data)
+    section.request.request_second&attributes(attributes)#request
         .request__container.container
 
             .request__w
                 .request__entry
-                    h2.request__title.title Начнем?
+                    h2.request__title.title Shall we begin?
                     .request__text
-                        p Давайте продумаем систему CRM-маркетинга, с которой вы повысите свою конкурентоспособность.
-                        p Email-коммуникация здесь — важнейшее звено.
+                        p Let's think through a CRM marketing system with which you improve your competitiveness.
+                        p Email communication is the most important link here.
 
 
-                form.request__form.form
+                form.request__form.form.form_en
                     .form__row
                         .form__field
-                            input.form__input(type="text" name="" value="" placeholder="Имя")
+                            input.form__input(type="text" name="Name" value="" placeholder="Name")
                         .form__field
-                            input.form__input(type="text" name="" value="" placeholder="Телефон")
+                            input.form__input.form__input_phone(type="text" name="Phone" value="" placeholder="Phone")
 
 
                     .form__bottom
-                        input.form__submit.button(type="submit" value="Обсудить проект")
+                        input.form__submit.button(type="submit" value="Discuss the project")
 
-                        .form__note Нажимая кнопку «обсудить проект», вы соглашаетесь с политикой обработки персональных данных.
+                        .form__note By clicking the "discuss project" button, you agree to the personal data processing policy.
